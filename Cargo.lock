@@ -2232,12 +2232,14 @@ dependencies = [
  "env_logger",
  "futures-lite",
  "itertools 0.10.5",
+ "libc",
  "log",
  "rand 0.8.5",
  "reqwest",
  "serde",
  "serde_json",
  "shared",
+ "syscalls",
  "tokio",
 ]
 
@@ -3045,9 +3047,9 @@ dependencies = [
 
 [[package]]
 name = "num-complex"
-version = "0.4.3"
+version = "0.4.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "02e0d21255c828d6f128a1e41534206671e8c3ea0c62f32291e808dc82cff17d"
+checksum = "1ba157ca0885411de85d6ca030ba7e2a83a28636056c7c699b07c8b6f7383214"
 dependencies = [
  "num-traits",
 ]
@@ -3367,42 +3369,6 @@ name = "pkg-config"
 version = "0.3.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "26072860ba924cbfa98ea39c8c19b4dd6a4a25423dbdf219c1eca91aa0cf6964"
-
-[[package]]
-name = "pokerbots"
-version = "0.1.0"
-dependencies = [
- "actix",
- "actix-files",
- "actix-multipart",
- "actix-service",
- "actix-session",
- "actix-web",
- "aws-config",
- "aws-sdk-s3",
- "aws-sdk-sqs",
- "cargo-watch",
- "chrono",
- "diesel",
- "dotenvy",
- "env_logger",
- "futures",
- "futures-util",
- "itertools 0.11.0",
- "lazy_static",
- "log",
- "r2d2",
- "rand 0.8.5",
- "reqwest",
- "serde",
- "serde_json",
- "serde_yaml",
- "shared",
- "tokio",
- "ts-rs",
- "url",
- "zip",
-]
 
 [[package]]
 name = "polling"
@@ -3757,9 +3723,9 @@ dependencies = [
 
 [[package]]
 name = "rustls-webpki"
-version = "0.101.2"
+version = "0.101.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "513722fd73ad80a71f72b61009ea1b584bcfa1483ca93949c8f290298837fa59"
+checksum = "261e9e0888cba427c3316e6322805653c9425240b6fd96cee7cb671ab70ab8d0"
 dependencies = [
  "ring",
  "untrusted",
@@ -4105,6 +4071,17 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
+]
+
+[[package]]
+name = "syscalls"
+version = "0.6.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "97feb70b9443edd79ca26f40122d271fa61df4ffb2220965a27711bfe6ceec7c"
+dependencies = [
+ "cc",
+ "serde",
+ "serde_repr",
 ]
 
 [[package]]
@@ -4528,6 +4505,42 @@ name = "untrusted"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a156c684c91ea7d62626509bce3cb4e1d9ed5c4d978f7b4352658f96a4c26b4a"
+
+[[package]]
+name = "upac_web"
+version = "0.1.0"
+dependencies = [
+ "actix",
+ "actix-files",
+ "actix-multipart",
+ "actix-service",
+ "actix-session",
+ "actix-web",
+ "aws-config",
+ "aws-sdk-s3",
+ "aws-sdk-sqs",
+ "cargo-watch",
+ "chrono",
+ "diesel",
+ "dotenvy",
+ "env_logger",
+ "futures",
+ "futures-util",
+ "itertools 0.11.0",
+ "lazy_static",
+ "log",
+ "r2d2",
+ "rand 0.8.5",
+ "reqwest",
+ "serde",
+ "serde_json",
+ "serde_yaml",
+ "shared",
+ "tokio",
+ "ts-rs",
+ "url",
+ "zip",
+]
 
 [[package]]
 name = "url"

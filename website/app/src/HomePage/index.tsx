@@ -72,7 +72,7 @@ export default function HomePage() {
               height: "100px",
             }}
           />
-          <Typography variant="h2">Poker Bot League</Typography>
+          <Typography variant="h2">UPAC</Typography>
         </Box>
         <Box
           sx={{
@@ -101,7 +101,7 @@ export default function HomePage() {
           }}
         >
           The competition will start in 2024. For sponsorship inquiries, please
-          contact pokerbotleague@mcgill.ca.
+          contact alexwaeseperlman@gmail.com.
         </Container>
       </Box>
     </Box>
